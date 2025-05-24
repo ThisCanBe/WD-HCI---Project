@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="tax.css">
+    <title>TAX</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="Electron.png" alt="Logo"></img>
+        </header>
+        <h1 class="welcome">Welcome,</h1>
+        <img class="user" src="user.png" alt=""></img>
+        <h1 class="admin">Admin</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="ManageEmployee.html">Manage Employees</a>
+                </li>
+                <li>
+                    <a href="#">Manage Attendance</a>
+                </li>
+                <li>
+                    <a href="SalaryDetails.html">Salary Details</a>
+                </li>
+                <li>
+                    <a href="bank.html">Bank & Tax info</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary of Attendance</a>
+                </li>
+                <li>
+                    <a href="salaryslip.html">Calculate Salary</a>
+                </li>
+            </ul>
+            <a class="logout" href="#">Log out</a>
+        </nav>
+    </aside>
+    <div class="content">
+        <h1>Tax</h1>
+        <div class="box">
+            <div class="mbutton">
+            <button id="button11" onclick="addTaxRecord()">ADD TAX RECORD</button>
+
+            <a href="bank.html">
+            <button id="button12" onclick="">BANK</button>
+            </a>
+
+            <a href="employeeloan.html">
+            <button id="button13" onclick="">LOAN</button>
+            </a>
+            
+            </div>
+        <table id="taxTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Monthly Salary</th>
+                    <th>Tax Rate (%)</th>
+                    <th>Tax Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Daniel Magsakay</td>
+                    <td>₱40,000</td>
+                    <td>10%</td>
+                    <td>₱4,000</td>
+                    <td><button class="edit" onclick="editRow(this)">EDIT</button>
+                        <br>
+                        <button class="delete" onclick="deleteRow(this)">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Jeferson Almoradie</td>
+                    <td>₱30,000</td>
+                    <td>10%</td>
+                    <td>₱3,000</td>
+                    <td><button class="edit" onclick="editRow(this)">EDIT</button>
+                        <br>
+                        <button class="delete" onclick="deleteRow(this)">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Mark Camua</td>
+                    <td>₱30,000</td>
+                    <td>10%</td>
+                    <td>₱3,000</td>
+                    <td><button class="edit" onclick="editRow(this)">EDIT</button>
+                        <br>
+                        <button class="delete" onclick="deleteRow(this)">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Carl Michael Nocon</td>
+                    <td>₱40,000</td>
+                    <td>10%</td>
+                    <td>₱4,000</td>
+                    <td><button class="edit" onclick="editRow(this)">EDIT</button>
+                        <br>
+                        <button class="delete" onclick="deleteRow(this)">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Johan Capule</td>
+                    <td>₱30,000</td>
+                    <td>10%</td>
+                    <td>₱3,000</td>
+                    <td><button class="edit" onclick="editRow(this)">EDIT</button>
+                        <br>
+                        <button class="delete" onclick="deleteRow(this)">DELETE</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="tax.js"></script>
+</body>
+</html>

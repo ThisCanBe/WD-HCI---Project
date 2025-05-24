@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salaryslip.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="Electron.png" alt="Logo"></img>
+        </header>
+
+        <h1 class="welcome">Welcome,</h1>
+        <img class="user" src="user.png" alt=""></img>
+
+        <h1 class="admin">Admin</h1>
+        <nav class="sidebar-nav">
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="ManageEmployee.html">Manage Employees</a>
+                </li>
+                <li>
+                    <a href="#">Manage Attendance</a>
+                </li>
+                <li>
+                    <a href="SalaryDetails.html">Salary Details</a>
+                </li>
+                <li>
+                    <a href="bank.html">Bank & Tax info</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary of Attendance</a>
+                </li>
+                <li>
+                    <a href="salaryslip.html">Calculate Salary</a>
+                </li>
+            </ul>
+            <a class="logout" href="#">Log out</a>
+        </nav>
+    </aside>
+
+    <div class="back">
+           <p><a href="#"><</a></p>
+    </div>
+    
+    <div class="hed">
+        <h2>Salary Slip</h2>
+        <br>
+        <h1>Company Name</h1>
+
+        <hr style="border: 2px solid black;">
+
+        <div class="info">
+            <label for="employee"><b>Employees:</b></label>
+            <input type="text" placeholder="">
+            <label for="employee"><b>Employee id:</b></label>
+            <input type="text" placeholder="">
+        </div>
+                
+        <div class="info1">
+            <label for="employid"><b>Designation:</b></label>
+            <input type="text" placeholder="">
+            <label for="monthyear"><b>Month & Years:</b></label>
+            <input type="text" placeholder="">
+            <br><br>
+        </div>
+
+                <div class="tab1">
+        <table>
+            <tr>
+                <th><h4>Earnings</h4></th>
+                <th><h4>Amount</h4></th>
+                <th><h4>Deduction</h4></th>
+                <th><h4>Amount</h4></th>
+             </tr>
+
+            <tr>
+                <td style="text-align: left;">Basic Salary</td>
+                <td><input type="text" style="border: none;"></td>
+                <td style="text-align: left;">Professional Tax</td>
+                <td><input type="text" style="border: none;"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: left;">Over Time</td>
+                <td><input type="text" style="border: none;"></td>
+                <td style="text-align: left;">Absent</td>
+                <td><input type="text" style="border: none;"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: left;">Incentive Pay</td>
+                <td><input type="text" style="border: none;"></td>
+                <td style="text-align: left;">Late</td>
+                <td><input type="text" style="border: none;"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: left;">Meal Allowance</td>
+                <td><input type="text" style="border: none;"></td>
+                <td style="text-align: left;">Advance</td>
+                <td><input type="text" style="border: none;"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;">Total</td>
+                <td><input type="text" style="border: none;"></td>
+                <td style="text-align: right;">Total</td>
+                <td><input type="text" style="border: none;"></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="view">
+        <p><a href="download.html">View</p>
+    </div>
+</body>
+</html>

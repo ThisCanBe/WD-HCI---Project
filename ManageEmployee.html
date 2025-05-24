@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="ManageEmployee.css">
+    <title>Manage Employee</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="Electron.png" alt="Logo" class="logo"></img>
+        </header>
+        <h1 class="welcome">Welcome,</h1>
+        <img class="user" src="user.png" alt=""></img>
+        <h1 class="admin">Admin</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="ManageEmployee.html">Manage Employees</a>
+                </li>
+                <li>
+                    <a href="#">Manage Attendance</a>
+                </li>
+                <li>
+                    <a href="SalaryDetails.html">Salary Details</a>
+                </li>
+                <li>
+                    <a href="bank.html">Bank & Tax info</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary of Attendance</a>
+                </li>
+                <li>
+                    <a href="salaryslip.html">Calculate Salary</a>
+                </li>
+            </ul>
+            <a class="logout" href="login.html">Log out</a>
+        </nav>
+    </aside>
+    <div class="container">
+        <h1 class="title-page">Manage Employees</h1>
+        <table class="employee-table">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Job Designation</th>
+                <th>Action <button class="add" onclick="add()" ><img src="add.svg" alt="" srcset=""></button></th>
+            </tr>
+            
+            <tr>
+                <td><img src="user.png" alt="" class="profile"></img><p>Daniel Magsakay</p></td>
+                <td>3421</td>
+                <td>09225292260</td>
+                <td>working</td>
+                <td>CEO</td>
+                <td><button class="edit" onclick="edit()"><img src="edit.svg" alt="" srcset=""></button><button class="delete" onclick="delete()"><img src="delete.svg" alt="" srcset=""></button></td>
+            </tr>
+            
+            <tr>
+                <td><img src="user.png" alt="" class="profile"></img><p>Carl Michael Nocon</p></td>
+                <td>3421</td>
+                <td>09225292260</td>
+                <td>working</td>
+                <td>CEO</td>
+                <td><button class="edit" onclick="edit()"><img src="edit.svg" alt="" srcset=""></button><button class="delete" onclick="delete()"><img src="delete.svg" alt="" srcset=""></button></td>
+            </tr>
+            
+            <tr>
+                <td><img src="user.png" alt="" class="profile"></img><p>John Mark Camua</p></td>
+                <td>3421</td>
+                <td>09225292260</td>
+                <td>working</td>
+                <td>CEO</td>
+                <td><button class="edit" onclick="edit()"><img src="edit.svg" alt="" srcset=""></button><button class="delete" onclick="delete()"><img src="delete.svg" alt="" srcset=""></button></td>
+            </tr>
+            
+            <tr>
+                <td><img src="user.png" alt="" class="profile"></img><p>Jeferson Almoradie</p></td>
+                <td>3421</td>
+                <td>09225292260</td>
+                <td>working</td>
+                <td>CEO</td>
+                <td><button class="edit" onclick="edit()"><img src="edit.svg" alt="" srcset=""></button><button class="delete" onclick="delete()"><img src="delete.svg" alt="" srcset=""></button></td>
+            </tr>
+            
+        </table>
+    </div>
+    <script>
+        function edit(){
+            window.location.href="edit.html"
+        }
+        function add(){
+            window.location.href="adds.html"
+        }
+    </script>
+    </script>
+</body>
+</html>

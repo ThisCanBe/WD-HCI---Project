@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    background: #faf5ee;
+    width: 1600px;
+    height: 1200px;
+    margin-left: 500px;
+}
+.container {
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: none;
+  background-color: white;
+  margin-bottom: 400px;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  font-size: 16px;
+  text-align: left;
+}
+.footer {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.download {
+  text-align: right;
+  margin-top: 10px;
+}
+.download button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button{
+  margin-top: 20px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-right: 655px;
+}
